@@ -62,7 +62,9 @@ address {
 
 .main {
   padding-bottom: 40px;
-  background: url('../images/top-pic.jpg') center top no-repeat;
+  background: 
+    url('../images/top-pic.jpg') center top no-repeat, 
+    url('../images/bottom-pic.jpg') center bottom no-repeat;
 }
 
 .container {
