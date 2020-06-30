@@ -57,14 +57,25 @@ address {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 .main {
   padding-bottom: 40px;
+  color: #fff;
   background: 
     url('../images/top-pic.jpg') center top no-repeat, 
     url('../images/bottom-pic.jpg') center bottom no-repeat;
+}
+
+.main--inner {
+  padding: 0;
+  color: #1a1b1e;
+  background: none;
 }
 
 .container {
@@ -74,8 +85,20 @@ address {
   padding: 0 15px;
 }
 
-.section + .section {
+.section:not(.section--inner) + .section {
   margin-top: 150px;
+}
+
+.section--inner {
+  padding: 100px 0;
+}
+
+.section--inner:nth-of-type(even) {
+  background-color: #fff;
+}
+
+.section--inner:nth-of-type(odd) {
+  background-color: #f4f5f5;
 }
 
 .logo {
@@ -84,7 +107,6 @@ address {
 }
 
 .phone {
-  color: #fff;
   font-size: 26px;
   line-height: 1.3;
 }
@@ -108,7 +130,10 @@ address {
 .title--section {
   margin-bottom: 50px;
   font-size: 36px;
-  color: #fff;
+}
+
+.title--inner {
+  font-size: 48px;
 }
 
 .title--block {
@@ -200,7 +225,6 @@ address {
 
 /* Навигация */
 .nav {
-  color: #fff;
   font-size: 14px;
 }
 
@@ -251,11 +275,56 @@ address {
 
 
 
+/* Хлебные крошки */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.breadcrumbs__item:not(:last-of-type):after {
+  content: '/';
+  display: block;
+  margin: 0 5px;
+  opacity: .4;
+}
+
+.breadcrumbs__item--active {
+  pointer-events: none;
+}
+
+.breadcrumbs__link {
+  opacity: .4;
+  border-bottom: 1px solid #fff;
+  transition: opacity .25s ease-in-out;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 1;
+}
+
+
+
+
+
 /* Секция hero */
 .hero {
   height: 100vh;
   min-height: 568px;
   color: #fff;
+}
+
+.hero--inner {
+  height: 410px;
+  min-height: unset;
+  background: url('../images/inner-pic.jpg') right top no-repeat;
+  background-attachment: fixed;
 }
 
 .hero__container {
@@ -275,6 +344,10 @@ address {
 
 .hero__button {
   margin-top: 30px;
+}
+
+.hero__breadcrumbs {
+  margin-bottom: 25px;
 }
 
 
@@ -299,6 +372,7 @@ address {
 .trip {
   height: 100%;
   border-radius: 6px;
+  color: #1a1b1e;
   background-color: #fff;
   overflow: hidden;
 }
@@ -487,6 +561,10 @@ address {
 
 
 /* Секция о нас */
+.about {
+  color: #1a1b1e;
+}
+
 .about__container {
   position: relative;
   padding-top: 100px;
@@ -519,6 +597,35 @@ address {
 
 .about__button {
   margin-top: 50px;
+}
+
+
+
+
+
+/* Секция партнеров */
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -25px;
+}
+
+.partners__list:hover .partners__image {
+  filter: grayscale(1);
+}
+
+.partners__item {
+  padding: 25px;
+}
+
+.partners__item:hover .partners__image {
+  filter: grayscale(0);
+}
+
+.partners__image {
+  transition: filter .25s ease-in-out;
 }
 
 
