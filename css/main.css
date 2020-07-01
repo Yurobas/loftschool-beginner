@@ -692,12 +692,13 @@ address {
   filter: grayscale(1);
 }
 
-.partners__item {
-  padding: 25px;
-}
-
 .partners__item:hover .partners__image {
   filter: grayscale(0);
+}
+
+.partners__link {
+  display: block;
+  padding: 25px;
 }
 
 .partners__image {
