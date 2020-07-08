@@ -1,0 +1,50 @@
+/* Карточка тура */
+.trip {
+  height: 100%;
+  border-radius: 6px;
+  color: #1a1b1e;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.trip:hover .trip__image {
+  opacity: 1;
+  transform: scale3d(1.015, 1.015, 1.015);
+}
+
+.trip__bg {
+  width: 100%;
+  height: 140px;
+  background-color: #303030;
+}
+
+.trip__image {
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  object-fit: cover;
+  transition: opacity .25s ease-in-out, transform .25s ease-in-out;
+}
+
+.trip__info {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 140px);
+  padding: 30px 20px;
+}
+
+.trip__name {
+  margin-bottom: 20px;
+}
+
+.trip__features {
+  margin-bottom: 30px;
+}
+
+.trip__description:last-of-type {
+  margin-bottom: 25px;
+}
+
+.trip__button {
+  margin-top: auto;
+}

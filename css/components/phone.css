@@ -1,0 +1,10 @@
+/* Телефон */
+.phone {
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+.phone__info {
+  font-size: 11px;
+  color: #9a9a9a;
+}

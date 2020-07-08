@@ -1,0 +1,21 @@
+/* График работы */
+.schedule {
+  line-height: 1;
+}
+
+.schedule:hover .schedule__name {
+  opacity: 1;
+
+}
+.schedule__name {
+  display: inline-block;
+  font-size: 13px;
+  border-bottom: 1px solid #fff;
+  transition: opacity .25s ease-in-out;
+  cursor: pointer;
+  opacity: .6;
+}
+
+.schedule__info {
+  display: none;
+}

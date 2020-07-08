@@ -1,0 +1,10 @@
+/* Ссылки */
+.link {
+  color: #fff;
+  transition: color .25s ease-in-out;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #f5170e;
+}

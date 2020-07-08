@@ -1,0 +1,43 @@
+/* Страница приветствия */
+.welcome {
+  height: 100vh;
+  background: url('../../images/welcome-bg.jpg') 50% 50%/cover no-repeat;
+}
+
+.welcome__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.welcome__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.welcome__content > * {
+  position: relative;
+  z-index: 1;
+}
+
+.welcome__content:after {
+  content: url('../../images/shades.png');
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.welcome__title {
+  margin-top: 8px;
+  color: #fff;
+  text-align: center;
+}
+
+.welcome__button {
+  align-self: center;
+  margin-top: 50px;
+}

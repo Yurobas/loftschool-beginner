@@ -1,0 +1,21 @@
+/* Навигация */
+.nav {
+  font-size: 14px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item--active .link {
+  color: #f5170e;
+}
+
+.nav__item--active {
+  pointer-events: none;
+}
+
+.nav__link {
+  padding: 15px 28px;
+}

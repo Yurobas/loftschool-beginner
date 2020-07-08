@@ -1,0 +1,17 @@
+/* Секция новостей */
+.events__list {
+  display: flex;
+}
+
+.events__item {
+  flex: 1;
+  height: 390px;
+}
+
+.events__item:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+.events__pagination {
+  margin-top: 50px;
+}

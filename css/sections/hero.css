@@ -1,0 +1,36 @@
+/* Секция hero */
+.hero {
+  height: 100vh;
+  min-height: 568px;
+  color: #fff;
+}
+
+.hero--inner {
+  height: 410px;
+  min-height: unset;
+  background: url('../../images/inner-pic.jpg') right top no-repeat;
+  background-attachment: fixed;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero__content {
+  max-width: 530px;
+  margin: auto 0;
+}
+
+.hero__title {
+  margin-bottom: 25px;
+}
+
+.hero__button {
+  margin-top: 30px;
+}
+
+.hero__breadcrumbs {
+  margin-bottom: 25px;
+}

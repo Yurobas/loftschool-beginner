@@ -1,0 +1,10 @@
+/* Лого */
+.logo {
+  width: 98px;
+  height: 42px;
+}
+
+.logo--wide {
+  width: 280px;
+  height: 120px;
+}

@@ -1,0 +1,25 @@
+/* Секция партнеров */
+.partners__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -25px;
+}
+
+.partners__list:hover .partners__image {
+  filter: grayscale(1);
+}
+
+.partners__item:hover .partners__image {
+  filter: grayscale(0);
+}
+
+.partners__link {
+  display: block;
+  padding: 25px;
+}
+
+.partners__image {
+  transition: filter .25s ease-in-out;
+}

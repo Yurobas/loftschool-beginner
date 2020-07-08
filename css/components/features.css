@@ -1,0 +1,22 @@
+/* Инфо о турах */
+.features {
+  display: flex;
+  align-items: center;
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+}
+
+.features__item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.features__icon {
+  margin-right: 8px;
+}
+
+.features__text {
+  color: #666;
+}

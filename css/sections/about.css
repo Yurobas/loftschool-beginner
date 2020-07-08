@@ -1,0 +1,38 @@
+/* Секция о нас */
+.about {
+  color: #1a1b1e;
+}
+
+.about__container {
+  position: relative;
+  padding-top: 100px;
+}
+
+.about__picture,
+.about__block {
+  border-radius: 6px;
+}
+
+.about__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(5 / 12 * 100%);
+}
+
+.about__block {
+  position: relative;
+  width: calc(8 / 12 * 100%);
+  margin-left: auto;
+  padding: 80px 105px;
+  background: url('../../images/mountains.jpg') 35% 30% no-repeat #fff;
+  overflow: hidden;
+}
+
+.about__title {
+  color: #000;
+}
+
+.about__button {
+  margin-top: 50px;
+}

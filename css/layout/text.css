@@ -1,0 +1,41 @@
+/* Текст */
+.title {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.title--subtitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title--section {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+
+.title--inner {
+  font-size: 48px;
+}
+
+.title--block {
+  font-size: 24px;
+}
+
+.title--hot {
+  position: relative;
+  display: inline-block;
+}
+
+.title--hot:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  display: block;
+  width: 21px;
+  height: 28px;
+  background: url('../../images/icons/flame.png');
+  transform: translate(100%, -50%);
+}

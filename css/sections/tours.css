@@ -1,0 +1,9 @@
+/* Секция туров */
+.tours__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tours__item {
+  width: calc(100% / 3 - 30px / 3);
+}
